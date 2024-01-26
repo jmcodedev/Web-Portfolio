@@ -3,6 +3,8 @@
 * {
   --color-acentuado: #ff014f;
   --color-fondo: black;
+  --color-linkedin: #0e76a8;
+  --color-github: #c9510c;
 
   list-style: none;
   text-decoration: none;
@@ -85,14 +87,14 @@ button {
   height: 100vh;
   width: 100%;
   align-items: center;
-  clip-path: circle(25% at 50% 50%);
+  clip-path: circle(30% at 50% 50%);
   background-color: var(--color-acentuado);
   justify-content: center;
 }
 #main-foto {
-  clip-path: circle(60% at 50% 50%);
+  clip-path: circle(80% at 50% 50%);
   margin: 0 auto;
-  height: 60%;
+  height: 65%;
   width: auto;
 }
 
@@ -141,4 +143,19 @@ h1 p {
   flex-direction: row;
   padding-top: 16px;
   gap: 50px;
+}
+
+#linkedin {
+  transition: 0.5s;
+}
+
+#linkedin:hover {
+  box-shadow: var(--color-linkedin) 0px 20px 30px 2px;
+}
+#github {
+  transition: 0.5s;
+}
+
+#github:hover {
+  box-shadow: var(--color-github) 0px 20px 30px 2px;
 }
