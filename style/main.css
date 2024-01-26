@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
 * {
   --color-acentuado: #ff014f;
   --color-fondo: black;
@@ -32,6 +33,7 @@ button {
   cursor: pointer;
 }
 .main-header {
+  font-family: "Space Grotesk", sans-serif;
   position: absolute;
   z-index: 999;
   width: 100%;
@@ -39,10 +41,16 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 64px;
+  padding: 0 80px;
+  font-size: 18px;
+}
+
+.logo {
+  font-size: 30px;
 }
 
 .nav-ul {
+  font-family: "Space Grotesk", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,8 +58,8 @@ button {
 }
 
 .nav-ul a {
-  font-size: 1rem;
   transition: opacity 0.3s;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .main-page {
@@ -87,7 +95,6 @@ button {
 }
 #main-foto {
   clip-path: circle(60% at 50% 50%);
-  z-index: 100;
   margin: 0 auto;
   height: 60%;
   width: auto;
@@ -98,9 +105,17 @@ h1 p {
 }
 
 .botones-presentacion button {
-  width: 90px;
-  height: 40px;
+  font-size: 18px;
+  width: 140px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
   background-color: #24243e;
+  transition: 0.5s;
+}
+
+.botones-presentacion button:hover {
+  box-shadow: var(--color-acentuado) 0px 20px 30px -10px;
 }
 
 .botones-presentacion {
@@ -113,6 +128,7 @@ h1 p {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  background-color: var(--color-acentuado);
 }
 #cv svg {
   max-width: 1rem;
@@ -128,5 +144,5 @@ h1 p {
   display: flex;
   flex-direction: row;
   padding-top: 16px;
-  gap: 16px;
+  gap: 50px;
 }
