@@ -15,53 +15,31 @@
   padding: 0;
 }
 .main-container {
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
 }
 button {
   cursor: pointer;
 }
 .main-header {
+  display: flex;
+  width: 100%;
+  max-height: 10vh;
   font-family: "Space Grotesk", sans-serif;
   position: absolute;
-  z-index: 999;
-  width: 100%;
-  height: 100px;
+  z-index: 1000;
+  background-color: black;
+}
+
+.main-header .logo-container a img {
+  scale: 0.25;
+  background-color: yellow;
+}
+
+.main-header nav .nav-ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 80px;
-  font-size: 18px;
 }
-
-.logo {
-  font-size: 30px;
-}
-
-.nav-ul {
-  font-family: "Space Grotesk", sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 4rem;
-}
-
-.nav-ul a {
-  transition: opacity 0.3s;
-  font-family: "Space Grotesk", sans-serif;
-}
-
 .main-page {
   display: flex;
   justify-content: center;
@@ -82,7 +60,7 @@ button {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 25px;
+  gap: 40px;
 }
 .circular-clip {
   display: flex;
@@ -91,6 +69,7 @@ button {
   align-items: center;
   clip-path: circle(25% at 50% 50%);
   background-color: var(--color-acentuado);
+  z-index: 100;
   justify-content: center;
 }
 #main-foto {
@@ -138,6 +117,7 @@ h1 p {
   width: 30px;
   border: none;
   background: none;
+  transition: 0.5s;
 }
 
 .social-icons-container {
@@ -145,4 +125,15 @@ h1 p {
   flex-direction: row;
   padding-top: 16px;
   gap: 50px;
+}
+
+#github {
+  border-radius: 25px;
+}
+
+#linkedin:hover {
+  box-shadow: lightskyblue 0px 10px 25px -5px;
+}
+#github:hover {
+  box-shadow: lightsalmon 0px 10px 25px -5px;
 }
