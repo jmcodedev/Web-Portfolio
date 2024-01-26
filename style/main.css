@@ -9,11 +9,28 @@
   font-family: "Raleway", sans-serif;
 
   box-sizing: border-box;
-
+  color: white;
   margin: 0;
   padding: 0;
 }
-
+.main-container {
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+button {
+  cursor: pointer;
+}
 .main-header {
   position: absolute;
   z-index: 999;
@@ -33,7 +50,6 @@
 }
 
 .nav-ul a {
-  color: #212529;
   font-size: 1rem;
   transition: opacity 0.3s;
 }
@@ -45,20 +61,72 @@
   height: 100vh;
 }
 
-.main-page .izquierdo {
+.izquierdo {
   min-width: 50%;
-  display: inline-block;
-  align-items: center;
-  height: 100vh;
-}
-.main-page .derecho {
-  min-width: 50%;
-  height: 100vh;
   display: flex;
   align-items: center;
+  height: 100vh;
+}
+.derecho {
+  min-width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 25px;
+}
+.circular-clip {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  clip-path: circle(25% at 50% 50%);
+  background-color: var(--color-acentuado);
+  justify-content: center;
+}
+#main-foto {
+  clip-path: circle(60% at 50% 50%);
+  z-index: 100;
+  margin: 0 auto;
+  height: 60%;
+  width: auto;
 }
 
-#main-foto {
-  margin: 0 auto;
-  width: 100%;
+h1 p {
+  color: var(--color-acentuado);
+}
+
+.botones-presentacion button {
+  width: 90px;
+  height: 40px;
+  background-color: #24243e;
+}
+
+.botones-presentacion {
+  display: flex;
+  gap: 32px;
+}
+
+#cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#cv svg {
+  max-width: 1rem;
+}
+.social-icons {
+  height: 30px;
+  width: 30px;
+  border: none;
+  background: none;
+}
+
+.social-icons-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 16px;
+  gap: 16px;
 }
