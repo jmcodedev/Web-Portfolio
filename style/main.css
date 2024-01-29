@@ -39,7 +39,7 @@
   padding: 0;
 }
 
-.container {
+.container-padre {
   font-family: var(--main-font);
   font-size: 18px;
   display: flex;
@@ -136,4 +136,11 @@ h1 p {
 }
 .github:hover {
   box-shadow: var(--color-github) 0px 20px 30px 2px;
+}
+
+@media (max-width: 980px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }

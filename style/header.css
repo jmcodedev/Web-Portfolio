@@ -1,37 +1,88 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
-.container header {
-  font-family: "Space Grotesk", sans-serif;
-  position: sticky;
+
+.back {
+  padding: 0 32px;
+  width: 100%;
+  position: absolute;
   top: 0;
-  height: 80px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  padding: 0 64px;
-  justify-content: space-between;
 }
-.container header a {
-  display: flex;
+
+.menu {
+  position: sticky;
   flex-direction: row;
-  flex: auto;
-  height: 100%;
-  align-items: center;
-}
-
-.container header a div {
-  background-color: #ff014f;
-  scale: 0.1;
-}
-
-.container header nav ul {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  justify-content: space-evenly;
-  gap: 0 30px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
 }
 
-@media (width <= 1000px) {
-  .container header {
-    flex-direction: column;
-    align-items: flex-start;
+.logo {
+  font-size: 24px;
+  color: #15a4f9;
+  text-transform: lowercase;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: #fff;
+  display: block;
+}
+
+.menu .navbar ul li a:hover {
+  color: #15a4f9;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 980px) {
+  .menu {
+    padding: 30px;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .back {
+    padding: 20px 0;
+  }
+
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding-left: 20px;
+    background-color: #212121;
+    display: none;
+    z-index: 1000;
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+  }
+
+  #menu:checked ~ .navbar {
+    display: initial;
   }
 }
