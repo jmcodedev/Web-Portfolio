@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  --color-acentuado: #f9517d;
+  --color-fuente: white;
+  --color-linkedin: #0e76a8;
+  --color-github: #c9510c;
+  --color-main-page: linear-gradient(
+    to right bottom,
+    #613cac,
+    #63297f,
+    #581c58,
+    #441438,
+    #2c101f,
+    #210d16,
+    #15070c,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000
+  );
+
+  --gradient-background-color: #4158d0;
+  --gradient-background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
+  --main-font: "Space Grotesk", sans-serif;
+
+  list-style: none;
+  text-decoration: none;
+
+  box-sizing: border-box;
+  color: var(--color-fuente);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  font-family: var(--main-font);
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  background-image: var(--color-main-page);
+}
+button {
+  cursor: pointer;
+  font-size: 18px;
+  background: #27282c;
+}
+
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+.main-container .main-left,
+.main-right {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-container .main-left {
+  align-items: center;
+}
+
+.main-container .main-right {
+  padding-left: 80px;
+  align-items: flex-start;
+  row-gap: 50px;
+}
+
+h1 p {
+  color: #38dee6;
+  text-shadow: #4158d0;
+  text-shadow: -2px 4px 9px rgba(21, 233, 225, 0.22);
+}
+.botones-presentacion {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.botones-presentacion button {
+  align-content: center;
+  border: none;
+  width: 140px;
+  height: 45px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.botones-presentacion button:hover {
+  scale: 0.95;
+  -webkit-box-shadow: 0px 5px 41px -1px var(--color-acentuado);
+  -moz-box-shadow: 0px 5px 41px -1px var(--color-acentuado);
+  box-shadow: 0px 5px 41px -1px var(--color-acentuado);
+}
+#cv {
+  background-image: var(--gradient-background-image);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#cv svg {
+  max-width: 1.1rem;
+}
+
+.lnk-gth {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.lnk-gth * {
+  height: 40px;
+  width: 40px;
+  border-radius: 20%;
+}
+.linkedin {
+  transition: 0.5s;
+}
+.linkedin:hover {
+  box-shadow: var(--color-linkedin) 0px 20px 30px 2px;
+}
+.github {
+  transition: 0.5s;
+}
+.github:hover {
+  box-shadow: var(--color-github) 0px 20px 30px 2px;
+}
