@@ -117,11 +117,11 @@ h1 p {
 @media (max-width: 980px) {
   .main-container {
     padding-top: 15px;
-    overflow: hidden;
+
     align-items: center;
     flex-direction: column;
+    place-items: center;
     gap: 15px 0;
-    width: 80%;
   }
 
   .main-container .main-left {
@@ -132,6 +132,7 @@ h1 p {
   }
   .main-container .main-right {
     width: auto;
+    padding: 0 20px;
   }
 
   .lnk-gth {
