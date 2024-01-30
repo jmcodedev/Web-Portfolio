@@ -159,6 +159,7 @@ h1 p {
   }
 
   #cv svg {
+    height: 50%;
     width: auto;
   }
 }
