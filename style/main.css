@@ -151,4 +151,10 @@ h1 p {
     width: 120px;
     height: auto;
   }
+
+  #cv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
