@@ -157,4 +157,8 @@ h1 p {
     align-items: center;
     justify-content: flex-start;
   }
+
+  #cv svg {
+    width: auto;
+  }
 }
