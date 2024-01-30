@@ -121,6 +121,7 @@ h1 p {
     align-items: center;
     flex-direction: column;
     gap: 15px 0;
+    height: 80vh;
   }
 
   .main-container .main-left {
