@@ -152,14 +152,7 @@ h1 p {
     height: auto;
   }
 
-  #cv {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
   #cv svg {
-    height: 50%;
-    width: auto;
+    display: none;
   }
 }
