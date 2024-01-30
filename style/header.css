@@ -41,6 +41,7 @@
   color: #fff;
   display: block;
   position: relative;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.28);
 }
 
 .menu .navbar ul li a:before {
@@ -73,6 +74,7 @@
 @media (max-width: 980px) {
   .menu {
     padding: 30px;
+    height: 50px;
   }
 
   .menu label {
@@ -81,6 +83,11 @@
 
   .back {
     padding: 20px 0;
+    background-image: radial-gradient(
+      100% 100% at 100% 0,
+      #5adaff 0,
+      #5468ff 100%
+    );
   }
 
   .menu .navbar {
@@ -89,7 +96,12 @@
     left: 0;
     right: 0;
     padding-left: 20px;
-    background-color: #212121;
+    background-image: radial-gradient(
+      100% 100% at 100% 0,
+      #5adaff 0,
+      #5468ff 100%
+    );
+
     display: none;
     z-index: 1000;
   }

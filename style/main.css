@@ -4,7 +4,7 @@
   --color-fuente: white;
   --color-linkedin: #0e76a8;
   --color-github: #c9510c;
-  --color-main-page: #4831d4;
+  --color-main-page: #4731d4e5;
   --color-acentuado-2: #55fbdc;
 
   --main-font: "Space Grotesk", sans-serif;
@@ -43,6 +43,7 @@
 
 .main-container .main-left {
   justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .main-container .main-right {
@@ -74,11 +75,16 @@ h1 p {
   font-size: 18px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: var(--color-acentuado-2);
-  background: transparent;
+  color: #fff;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
   cursor: pointer;
+  border: none;
   transition: ease-out 0.5s;
-  border: 2px solid var(--color-acentuado-2);
+
   border-radius: 10px;
   box-shadow: inset 0 0 0 0 var(--color-acentuado-2);
 }
@@ -110,7 +116,37 @@ h1 p {
 
 @media (max-width: 980px) {
   .main-container {
-    flex-direction: column;
+    padding-top: 15px;
+    overflow: hidden;
     align-items: center;
+    flex-direction: column;
+    gap: 15px 0;
+  }
+
+  .main-container .main-left {
+    width: auto;
+    height: 200px;
+    align-items: center;
+    scale: 0.3;
+  }
+  .main-container .main-right {
+    width: auto;
+  }
+
+  .lnk-gth {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+  }
+  .botones-presentacion {
+    align-items: flex-start;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  .main-button {
+    width: 120px;
+    height: auto;
   }
 }
