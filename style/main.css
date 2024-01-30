@@ -18,16 +18,13 @@
 body {
   display: flex;
   flex-direction: column;
+  font-family: var(--main-font);
 }
 
-header {
-  overflow: hidden;
-}
 /* 
 PÁGINA PRINCIAL
 */
 .container-padre {
-  font-family: var(--main-font);
   font-size: 18px;
   display: flex;
   flex-direction: column;
