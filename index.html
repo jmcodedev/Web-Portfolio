@@ -10,20 +10,9 @@
   </head>
   <body>
     <div class="container-padre">
-      <!-- <header>
-        <a style="font-size: 30px"> <strong>jm</strong>code.</a>
-        <nav>
-          <ul class="nav-ul">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre mi</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-      </header> -->
       <header>
         <div class="back">
-          <div class="menu container">
+          <div class="menu container" id="navbarDiv">
             <div class="logo">
               <a href="https://jmcode.dev"><strong>jm</strong>code.</a>
             </div>
@@ -43,12 +32,12 @@
         </div>
       </header>
       <main class="main-container">
-        <div class="main-left">
-          <div class="item foto">
+        <section class="main-left">
+          <article class="item foto">
             <img src="./img/IMG_5799.png" alt="Joan Martinez" id="personal-foto">
-          </div>
-        </div>
-        <div class="main-right">
+          </article>
+        </section>
+        <section class="main-right">
           <h1>
             Hola, soy
             <p>Joan Martinez</p>
@@ -81,8 +70,12 @@
               </svg>
             </a>
           </div>
-        </div>
+        </section>
       </main>
     </div>
+    <div class="container-sobremi">
+
+    </div>
+    <script src="./src/main.js"></script>
   </body>
 </html>

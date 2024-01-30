@@ -2,8 +2,6 @@
 * {
   --color-acentuado: #ccf381;
   --color-fuente: white;
-  --color-linkedin: #0e76a8;
-  --color-github: #c9510c;
   --color-main-page: #4731d4e5;
   --color-acentuado-2: #55fbdc;
 
@@ -17,7 +15,17 @@
   margin: 0;
   padding: 0;
 }
+body {
+  display: flex;
+  flex-direction: column;
+}
 
+header {
+  overflow: hidden;
+}
+/* 
+PÁGINA PRINCIAL
+*/
 .container-padre {
   font-family: var(--main-font);
   font-size: 18px;
@@ -69,7 +77,7 @@ h1 p {
   width: 150px;
   justify-content: center;
   gap: 10px;
-  margin: 15px;
+
   padding: 15px 30px;
   text-align: center;
   font-size: 18px;
@@ -110,10 +118,20 @@ h1 p {
   border-radius: 20%;
 }
 
+/* PÁGINA SOBRE MI */
+.container-sobremi {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/bbburst.svg");
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
 @media (max-width: 980px) {
+  /*PÁGINA INICIO*/
+
   .main-container {
     padding-top: 15px;
-
     align-items: center;
     flex-direction: column;
     place-items: center;
@@ -121,13 +139,13 @@ h1 p {
   }
 
   .main-container .main-left {
-    width: auto;
-    height: 200px;
+    width: 100%;
+    height: 300px;
     align-items: center;
     scale: 0.3;
   }
   .main-container .main-right {
-    width: auto;
+    width: 100%;
     padding: 0 20px;
   }
 
@@ -151,4 +169,6 @@ h1 p {
   #cv svg {
     display: none;
   }
+
+  /*PÁGINA SOBRE MI*/
 }
