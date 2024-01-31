@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/header.css" />
     <link rel="stylesheet" href="style/photo.css" />
+    <link rel="stylesheet" href="style/about-me.css">
     <title>Portfolio msJoan</title>
   </head>
   <body>
@@ -13,7 +14,7 @@
       @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
       </style>
       
-    <div class="container-padre">
+    <main class="container-padre">
       <header>
         <div class="back">
           <div class="menu container" id="navbarDiv">
@@ -35,51 +36,54 @@
           </div>
         </div>
       </header>
-      <main class="main-container">
-        <section class="main-left">
-          <article class="item foto">
-            <img src="./img/IMG_5799.png" alt="Joan Martinez" id="personal-foto">
-          </article>
-        </section>
-        <section class="main-right">
-          <h2>
-            Hola, soy
-            <p>Joan Martinez</p>
-          </h2>
-          <h1>Apasionado desarrollador backend</h1>
-          <div class="botones-presentacion">
-            <button id="contact" class="main-button">Contactar</button>
-            <a
-              href="./documents/CV_JOAN MARTINEZ.pdf"
-              download="CV_JOAN MARTINEZ.pdf"
-            >
-              <button id="cv" class="main-button">
-                CV<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  <path
-                    fill="#ffffff"
-                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"
-                  />
-                </svg>
-              </button>
-            </a>
-          </div>
-          <div class="lnk-gth">
-            <a href="https://github.com/msJoan02" class="github" target="_blank"
-              ><img src="./img/github.svg" alt="Mi Github"></a>
-            <a
-              href="https://www.linkedin.com/in/jmartsan/"
-              target="_blank"
-              class="linkedin"
-              ><img src="./img/linkedin.svg" alt="Mi LinkedIn">
-              </svg>
-            </a>
-          </div>
-        </section>
-      </main>
-    </div>
-    <div class="container-sobremi">
+     
+      <section class="main-container">
 
-    </div>
+        <article class="main-left">
+            <article class="item foto">
+              <img src="./img/IMG_5799.png" alt="Joan Martinez" id="personal-foto">
+            </article>
+        </article>
+        <article class="main-right">
+            <h2>
+              Hola, soy
+              <p>Joan Martinez</p>
+            </h2>
+            <h1>Apasionado desarrollador backend</h1>
+            <div class="botones-presentacion">
+              <button id="contact" class="main-button">Contactar</button>
+              <a
+                href="./documents/CV_JOAN MARTINEZ.pdf"
+                download="CV_JOAN MARTINEZ.pdf"
+              >
+                <button id="cv" class="main-button">
+                  CV<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      fill="#ffffff"
+                      d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"
+                    />
+                  </svg>
+                </button>
+              </a>
+            </div>
+            <div class="lnk-gth">
+              <a href="https://github.com/msJoan02" class="github" target="_blank"
+                ><img src="./img/github.svg" alt="Mi Github"></a>
+              <a
+                href="https://www.linkedin.com/in/jmartsan/"
+                target="_blank"
+                class="linkedin"
+                ><img src="./img/linkedin.svg" alt="Mi LinkedIn">
+                </svg>
+              </a>
+            </div>
+        </article>
+      </section>
+      <section class="container-sobremi">
+
+      </section>
+
+    </main>
     <script src="./src/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,8 @@
+/* PÁGINA SOBRE MI */
+.container-sobremi {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/bbburst.svg");
+  background-repeat: no-repeat;
+  background-position: 100%;
+}

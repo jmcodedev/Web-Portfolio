@@ -25,13 +25,13 @@ PÁGINA PRINCIAL
   font-size: 18px;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-main-page);
-  background-image: url("../img/main.svg");
 }
 
 .main-container {
   display: flex;
   height: 100vh;
+  background-color: var(--color-main-page);
+  background-image: url("../img/main.svg");
 }
 
 .main-container .main-left,
