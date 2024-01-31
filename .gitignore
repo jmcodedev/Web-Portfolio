@@ -1,6 +1,8 @@
 img/
 documents/
+.git/
 
+.gitignore
 *.pdf
 *.svg
 *.ts
