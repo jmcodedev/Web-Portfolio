@@ -31,7 +31,7 @@ PÁGINA PRINCIAL
   display: flex;
   height: 100vh;
   background-color: var(--color-main-page);
-  background-image: url("../img/main.svg");
+  background-image: url("../img/backgrounds/main.svg");
 }
 
 .main-container .main-left,
@@ -110,15 +110,6 @@ h2 p {
   height: 50px;
   width: 50px;
   border-radius: 20%;
-}
-
-/* PÁGINA SOBRE MI */
-.container-sobremi {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../img/bbburst.svg");
-  background-repeat: no-repeat;
-  background-position: 100%;
 }
 
 @media (max-width: 980px) {
