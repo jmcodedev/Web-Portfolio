@@ -144,6 +144,7 @@ h1 p {
   .main-container .main-right {
     width: 100%;
     padding: 0 25px;
+    height: 50%;
   }
 
   .lnk-gth {
