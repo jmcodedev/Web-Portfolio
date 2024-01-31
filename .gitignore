@@ -1,8 +1,3 @@
-img/
-documents/
-
-
-*.pdf
 *.svg
 *.ts
 tsconfig.json
