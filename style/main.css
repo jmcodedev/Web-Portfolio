@@ -124,7 +124,7 @@ h1 p {
 }
 
 @media (max-width: 980px) {
-  * {
+  :root {
     font-family: "Space Grotesk", sans-serif;
   }
   /*PÁGINA INICIO*/
