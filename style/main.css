@@ -5,11 +5,9 @@
   --color-main-page: #4731d4e5;
   --color-acentuado-2: #55fbdc;
 
-  --main-font: "Space Grotesk", sans-serif;
-
   list-style: none;
   text-decoration: none;
-  font-family: var(--main-font);
+  font-family: "Space Grotesk", sans-serif;
   box-sizing: border-box;
   color: var(--color-fuente);
   margin: 0;
@@ -124,9 +122,6 @@ h1 p {
 }
 
 @media (max-width: 980px) {
-  :root {
-    font-family: "Space Grotesk", sans-serif;
-  }
   /*PÁGINA INICIO*/
 
   .main-container {
