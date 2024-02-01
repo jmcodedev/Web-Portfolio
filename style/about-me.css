@@ -6,7 +6,7 @@
   --color-primario: #4731d4;
   --color-secundario: #ccf381;
   background-image: url("../img/backgrounds/ccchaos.svg");
-  background-size: 70%;
+  /* background-size: 70%; */
 }
 
 .container-sobremi h2 {
@@ -122,4 +122,57 @@ p {
 .pro-exp a img {
   width: 50px;
   height: auto;
+}
+
+@media (max-width: 980px) {
+  .top-abtm-container {
+    flex-direction: column;
+    width: auto;
+    padding: 0;
+    margin: 30px 50px;
+    align-items: center;
+    gap: 20px 0;
+  }
+
+  .top-abtm-container .abtm-tl-prs {
+    width: auto;
+    justify-content: center;
+  }
+
+  .illustration-pair-programming {
+    scale: 0.7;
+  }
+  .container-sobremi h2 {
+    font-size: 28px;
+  }
+
+  .knw-container {
+    flex-direction: column;
+  }
+
+  .knw-container .knw-lng {
+    display: flex;
+    flex-direction: row;
+    gap: 20px 50px;
+    padding: 50px 0 130px 0;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .abtm-ill-pro {
+    flex-direction: column;
+    gap: 20px 0;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .abtm-ill-pro .pro-exp {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .abtm-ill-pro .pro-exp p {
+    text-align: center;
+  }
 }
