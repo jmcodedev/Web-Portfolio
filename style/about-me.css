@@ -1,12 +1,18 @@
 /* PÁGINA SOBRE MI */
 
 .container-sobremi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: auto;
   --color-primario: #4731d4;
   --color-secundario: #ccf381;
   background-image: url("../img/backgrounds/ccchaos.svg");
-  /* background-size: 70%; */
+}
+
+.container-sobremi article {
+  max-width: 1280px;
 }
 
 .container-sobremi h2 {
@@ -14,12 +20,12 @@
 }
 
 .top-abtm-container {
-  padding: 64px 60px 0 60px;
+  padding-top: 64px;
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 
 .abtm-tl-prs {
@@ -38,9 +44,12 @@ p {
   font-size: 23px;
   color: #000;
   text-align: justify;
+  text-shadow: -1px 3px 0px rgba(0, 0, 0, 0.1);
 }
 
 .illustration-pair-programming {
+  position: absolute;
+  left: 250px;
   width: 400px;
   height: 267px;
 }
@@ -64,6 +73,7 @@ p {
   flex-direction: column;
   gap: 20px 0;
   height: auto;
+  align-items: center;
 }
 
 .knw-container .knw-lng {
@@ -87,20 +97,20 @@ p {
   padding: 64px 50px 0 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   height: auto;
-  padding-right: 25%;
 }
 
 .illustration-remote-meeting {
-  height: 190px;
-  width: 235px;
+  position: absolute;
+  right: 250px;
 }
 .illustration-remote-meeting * {
   padding-left: 50px;
   height: 190px;
   width: 235px;
+  scale: 2;
 }
 
 .pro-exp {

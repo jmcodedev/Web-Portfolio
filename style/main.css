@@ -54,6 +54,10 @@ PÁGINA PRINCIAL
   row-gap: 50px;
 }
 
+h1 {
+  font-size: 38px;
+}
+
 h2 p {
   color: var(--color-acentuado);
   text-shadow: #4158d0;
