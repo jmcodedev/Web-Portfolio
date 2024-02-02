@@ -49,11 +49,12 @@ p {
 
 .illustration-pair-programming {
   position: absolute;
-  left: 250px;
+  left: 180px;
   width: 400px;
   height: 267px;
 }
 .illustration-pair-programming * {
+  scale: 0.8;
   width: 400px;
   height: 267px;
 }
@@ -150,7 +151,8 @@ p {
   }
 
   .illustration-pair-programming {
-    scale: 0.7;
+    position: static;
+    scale: 1;
   }
   .container-sobremi h2 {
     font-size: 28px;
@@ -187,6 +189,14 @@ p {
     text-align: center;
   }
   .illustration-remote-meeting {
-    padding-left: 0;
+    position: static;
+    right: 0;
+  }
+
+  .illustration-remote-meeting * {
+    padding: 0 30px 0 0;
+    height: 185px;
+    width: 190px;
+    scale: 1.5;
   }
 }
