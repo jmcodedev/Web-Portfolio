@@ -8,7 +8,8 @@
   height: auto;
   --color-primario: #4731d4;
   --color-secundario: #ccf381;
-  background-image: url("../img/backgrounds/ccchaos.svg");
+  background-image: url("../img/backgrounds/ttten.svg");
+  background-size: 100%;
 }
 
 .container-sobremi article {
@@ -47,18 +48,6 @@ p {
   text-shadow: -1px 3px 0px rgba(0, 0, 0, 0.1);
 }
 
-.illustration-pair-programming {
-  position: absolute;
-  left: 180px;
-  width: 400px;
-  height: 267px;
-}
-.illustration-pair-programming * {
-  scale: 0.8;
-  width: 400px;
-  height: 267px;
-}
-
 .abtm-knw-exp {
   padding: 64px 50px 0 50px;
   width: 100%;
@@ -80,12 +69,12 @@ p {
 .knw-container .knw-lng {
   display: flex;
   flex-direction: row;
-  gap: 0 50px;
+  gap: 0 40px;
   padding: 50px 0 130px 0;
 }
 
 .knw-lng * {
-  width: 50px;
+  width: 70px;
   height: auto;
 }
 
@@ -101,17 +90,6 @@ p {
   justify-content: center;
   width: 100%;
   height: auto;
-}
-
-.illustration-remote-meeting {
-  position: absolute;
-  right: 250px;
-}
-.illustration-remote-meeting * {
-  padding-left: 50px;
-  height: 190px;
-  width: 235px;
-  scale: 2;
 }
 
 .pro-exp {
@@ -148,12 +126,9 @@ p {
   .top-abtm-container .abtm-tl-prs {
     width: auto;
     justify-content: center;
+    padding: 0 50px;
   }
 
-  .illustration-pair-programming {
-    position: static;
-    scale: 1;
-  }
   .container-sobremi h2 {
     font-size: 28px;
   }
@@ -187,16 +162,5 @@ p {
   }
   .abtm-ill-pro .pro-exp p {
     text-align: center;
-  }
-  .illustration-remote-meeting {
-    position: static;
-    right: 0;
-  }
-
-  .illustration-remote-meeting * {
-    padding: 0 30px 0 0;
-    height: 185px;
-    width: 190px;
-    scale: 1.5;
   }
 }
