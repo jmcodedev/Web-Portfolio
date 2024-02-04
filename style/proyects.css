@@ -1,0 +1,89 @@
+.container-proyectos {
+  display: flex;
+  justify-content: center;
+  padding-top: 64px;
+  --color-primario: #4731d4;
+  --color-secundario: #ccf381;
+  width: 100%;
+  height: auto;
+  background-image: url("../img/backgrounds/sprinkle.svg");
+  background-repeat: repeat;
+}
+.proyect-container {
+  max-width: 1280px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px 40px;
+  background-color: #fff;
+}
+.proyect-container h2 {
+  padding-left: 30px;
+  font-size: 32px;
+  color: var(--color-primario);
+}
+.proyect {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 50px;
+  padding: 70px 40px;
+  height: 430px;
+  width: 1000px;
+  background-color: #eee;
+  border-radius: 50px;
+}
+
+.even {
+  border: solid 2px var(--color-secundario);
+}
+
+.odd {
+  border: solid 2px var(--color-primario);
+}
+
+.proyect-screenshot {
+  width: 400px;
+  height: auto;
+}
+
+.proyect-details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 30px 0;
+}
+.proyect-details h3 {
+  color: var(--color-primario);
+}
+
+.proyect-details p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.proyect-details .developed-with {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.proyect-details .developed-with a {
+  color: var(--color-primario);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.proyect-details .developed-with .programming-lang {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 25px;
+}
+
+.proyect-details .developed-with .programming-lang * {
+  width: 40px;
+  height: auto;
+}
