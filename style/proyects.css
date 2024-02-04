@@ -4,9 +4,10 @@
   padding-top: 64px;
   --color-primario: #4731d4;
   --color-secundario: #ccf381;
+  --veryLightGray: hsl(0, 0%, 98%);
+  --grayishBlue: hsl(229, 6%, 66%);
   width: 100%;
   height: auto;
-  background-image: url("../img/backgrounds/sprinkle.svg");
   background-repeat: repeat;
 }
 .proyect-container {
@@ -29,21 +30,21 @@
   padding: 70px 40px;
   height: 430px;
   width: 1000px;
-  background-color: #eee;
+  background-color: var(--veryLightGray);
   border-radius: 50px;
-}
-
-.even {
-  border: solid 2px var(--color-secundario);
-}
-
-.odd {
   border: solid 2px var(--color-primario);
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
 }
 
+#screenshot-container {
+  display: flex;
+  align-items: center;
+  height: 262px;
+}
 .proyect-screenshot {
   width: 400px;
   height: auto;
+  border-radius: 25px;
 }
 
 .proyect-details {
@@ -63,7 +64,6 @@
 }
 
 .proyect-details .developed-with {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
