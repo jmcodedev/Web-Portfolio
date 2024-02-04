@@ -117,8 +117,7 @@ p {
   .top-abtm-container {
     flex-direction: column;
     width: auto;
-    padding: 0;
-    margin: 30px 50px;
+    margin-top: 40px;
     align-items: center;
     gap: 20px 0;
   }
