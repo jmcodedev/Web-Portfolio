@@ -75,3 +75,26 @@
   width: 593px;
   height: auto;
 }
+
+@media (max-width: 980px) {
+  .container-contacto .contactos {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .container-contacto .contactos .contact-izquierdo {
+    scale: 0.9;
+    align-items: center;
+  }
+  .container-contacto .contactos .contact-derecho {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .container-contacto .contactos .contact-derecho img {
+    width: 300px;
+    height: auto;
+  }
+}
