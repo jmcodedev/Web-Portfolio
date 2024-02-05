@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/header.css" />
     <link rel="stylesheet" href="style/photo.css" />
     <link rel="stylesheet" href="style/about-me.css">
-    <link rel="stylesheet" href="./style/proyects.css">
+    <link rel="stylesheet" href="style/proyects.css">
+    <link rel="stylesheet" href="style/contact.css">
     <title>Portfolio msJoan</title>
   </head>
   <body>
@@ -24,14 +26,14 @@
             </div>
             <input type="checkbox" id="menu" />
             <label for="menu">
-              <img src="./img/icons/menu.png" alt="menu-icon" class="menu-icono" />
+              <img src="./img/icons/menu.svg" alt="menu-icon" class="menu-icono" />
             </label>
             <nav class="navbar">
               <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobremi">Sobre mi</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#inicio" id="header-Inicio" class="header-link">Inicio</a></li>
+                <li><a href="#sobremi" id="header-SobreMi" class="header-link">Sobre mi</a></li>
+                <li><a href="#proyectos"id="header-Proyectos" class="header-link">Proyectos</a></li>
+                <li><a href="#contacto" id="header-Contacto" class="header-link">Contacto</a></li>
               </ul>
             </nav>
           </div>
@@ -53,7 +55,7 @@
             <div class="botones-presentacion">
               <button id="contact" class="main-button">Contactar</button>
               <a
-                href="./documents/CV_JOAN MARTINEZ.pdf"
+                href="documents/CV_JOAN MARTINEZ.pdf"
                 download="CV_JOAN MARTINEZ.pdf"
               >
                 <button id="cv" class="main-button">
@@ -68,12 +70,12 @@
             </div>
             <div class="lnk-gth">
               <a href="https://github.com/msJoan02" class="github" target="_blank"
-                ><img src="./img/icons/github.svg" alt="Mi Github"></a>
+                ><img src="img/icons/github.svg" alt="Mi Github"></a>
               <a
                 href="https://www.linkedin.com/in/jmartsan/"
                 target="_blank"
                 class="linkedin"
-                ><img src="./img/icons/linkedin.svg" alt="Mi LinkedIn">
+                ><img src="img/icons/linkedin.svg" alt="Mi LinkedIn">
                 </svg>
               </a>
             </div>
@@ -165,6 +167,30 @@
             </div>
           </div>
         </div>
+      </section>
+      <section class="container-contacto" id="contacto">
+        <article class="contactos">
+          <div class="contact-izquierdo">
+            <h2>CONTACTO</h2>
+            <div class="medios">
+              <a>
+                <img src="img/icons/mail.svg" alt="Mail icon">
+                <p id="emailLink">joan@jmcode.dev</p>
+              </a>
+              <a href="https://www.linkedin.com/in/jmartsan/">
+                <img src="img/icons/cool-linkedin.svg" alt="LinkedIn icon">
+                /jmartsan
+              </a>
+              <a href="documents/CV_JOAN MARTINEZ.pdf" download="CV_JOAN MARTINEZ.pdf">
+                <img src="img/icons/CV.svg" alt="CV Icon">
+                Descargar CV
+              </a>
+            </div>
+          </div>
+          <div class="contact-derecho">
+            <img src="img/person/foto-contacto@0,3x.png" alt="Joan">
+          </div>
+        </article>
       </section>
     </main>
     <script src="./src/main.js"></script>

@@ -10,6 +10,7 @@
   --color-secundario: #ccf381;
   /* background-image: url("../img/backgrounds/ttten.svg"); */
   background-size: 100%;
+  padding-bottom: 64px;
 }
 
 .container-sobremi article {
