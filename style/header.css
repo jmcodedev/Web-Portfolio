@@ -37,6 +37,7 @@ header {
   float: left;
 }
 .menu .navbar ul li a {
+  cursor: pointer;
   font-size: 18px;
   padding: 20px;
   color: #fff;

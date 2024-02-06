@@ -33,35 +33,4 @@ const handleCopyMail = () => {
         document.body.removeChild(areaTexto);
     };
 };
-const triggerClick = () => {
-    const headerLinks = document.querySelectorAll(".header-link");
-    headerLinks.forEach((link) => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault();
-            const targetId = link.getAttribute("href");
-            if (targetId !== null && targetId !== undefined) {
-                scrollHasta(targetId.substring(1));
-            }
-        });
-    });
-    const btnContacto = document.getElementById("contact");
-    if (btnContacto && btnContacto instanceof HTMLButtonElement) {
-        btnContacto.addEventListener("click", function () {
-            scrollHasta("contacto");
-        });
-    }
-};
-const scrollHasta = (targetId) => {
-    const targetElement = document.getElementById(targetId);
-    if (targetId) {
-        const offsetTop = targetElement === null || targetElement === void 0 ? void 0 : targetElement.offsetTop;
-        window.scrollTo({
-            top: offsetTop,
-            behavior: "smooth",
-        });
-    }
-};
-const cargaDom = () => {
-    handleCopyMail;
-};
 document.addEventListener("DOMContentLoaded", handleCopyMail);

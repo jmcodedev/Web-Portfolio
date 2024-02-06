@@ -1,3 +1,6 @@
+:root {
+  scroll-behavior: smooth;
+}
 * {
   --color-acentuado: #ccf381;
   --color-fuente: white;
