@@ -1,0 +1,166 @@
+/* PÁGINA SOBRE MI */
+
+.container-sobremi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  --color-primario: #4731d4;
+  --color-secundario: #ccf381;
+  /* background-image: url("../img/backgrounds/ttten.svg"); */
+  background-size: 100%;
+  padding-bottom: 64px;
+}
+
+.container-sobremi article {
+  max-width: 1280px;
+}
+
+.container-sobremi h2 {
+  font-size: 32px;
+}
+
+.top-abtm-container {
+  padding-top: 64px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.abtm-tl-prs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  height: auto;
+  width: 800px;
+}
+
+.abtm-tl-prs h2 {
+  color: var(--color-primario);
+}
+
+p {
+  font-size: 23px;
+  color: #000;
+  text-align: justify;
+  text-shadow: -1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.abtm-knw-exp {
+  padding: 64px 50px 0 50px;
+  width: 100%;
+  height: auto;
+}
+
+.abtm-knw-exp h2 {
+  color: var(--color-primario);
+}
+
+.knw-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  height: auto;
+  align-items: center;
+}
+
+.knw-container .knw-lng {
+  display: flex;
+  flex-direction: row;
+  gap: 0 40px;
+  padding: 50px 0 130px 0;
+}
+
+.knw-lng * {
+  width: 70px;
+  height: auto;
+}
+
+.knw-container p {
+  max-width: 800px;
+  text-align: justify;
+}
+
+.abtm-ill-pro {
+  padding: 64px 50px 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.pro-exp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0 15px;
+}
+
+.pro-exp p {
+  font-weight: 450;
+}
+
+.pro-exp p a {
+  font-weight: bold;
+  color: var(--color-primario);
+}
+
+.pro-exp a img {
+  width: 50px;
+  height: auto;
+}
+
+@media (max-width: 980px) {
+  .top-abtm-container {
+    flex-direction: column;
+    width: auto;
+    margin-top: 40px;
+    align-items: center;
+    gap: 20px 0;
+  }
+
+  .top-abtm-container .abtm-tl-prs {
+    width: auto;
+    justify-content: center;
+    padding: 0 50px;
+  }
+
+  .container-sobremi h2 {
+    font-size: 28px;
+  }
+
+  .knw-container {
+    flex-direction: column;
+  }
+
+  .knw-container .knw-lng {
+    display: flex;
+    flex-direction: row;
+    gap: 20px 50px;
+    padding: 50px 0 130px 0;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .abtm-ill-pro {
+    flex-direction: column;
+    gap: 20px 0;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 64px 50px;
+  }
+
+  .abtm-ill-pro .pro-exp {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .abtm-ill-pro .pro-exp p {
+    text-align: center;
+  }
+}

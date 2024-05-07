@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/photo.css" />
+    <link rel="stylesheet" href="style/about-me.css">
+    <link rel="stylesheet" href="style/proyects.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <title>Portfolio msJoan</title>
+  </head>
+  <body>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+    </style>
+      
+    <main class="container-padre" style="background-image: url('./img/backgrounds/sprinkle.svg');">
+      <header>
+        <div class="back">
+          <div class="menu container" id="navbarDiv">
+            <div class="logo">
+              <a href="https://jmcode.dev"><strong>jm</strong>code.</a>
+            </div>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+              <img src="./img/icons/menu.svg" alt="menu-icon" class="menu-icono" />
+            </label>
+            <nav class="navbar">
+              <ul>
+                <li><a href="#inicio" class="header-link">Inicio</a></li>
+                <li><a href="#sobremi" class="header-link">Sobre mi</a></li>
+                <li><a href="#proyectos" class="header-link">Proyectos</a></li>
+                <li><a href="#contacto" class="header-link">Contacto</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+     
+      <section class="main-container" id="inicio">
+        <article class="main-left">
+            <article class="item foto">
+              <img src="./img/person/foto-principal.png" alt="Joan Martinez" id="personal-foto">
+            </article>
+        </article>
+        <article class="main-right">
+            <h2>
+              Hola, soy
+              <p>Joan Martinez</p>
+            </h2>
+            <h1>Apasionado desarrollador backend</h1>
+            <div class="botones-presentacion">
+              <a href="#contacto"><button id="contact" class="main-button">Contactar</button>
+              <a
+                href="documents/CV_JOAN MARTINEZ.pdf"
+                download="CV_JOAN MARTINEZ.pdf"
+              >
+                <button id="cv" class="main-button">
+                  CV<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      fill="#ffffff"
+                      d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"
+                    />
+                  </svg>
+                </button>
+              </a>
+            </div>
+            <div class="lnk-gth">
+              <a href="https://github.com/jmcodedev" class="github" target="_blank"
+                ><img src="img/icons/github.svg" alt="Mi Github"></a>
+              <a
+                href="https://www.linkedin.com/in/jmartsan/"
+                target="_blank"
+                class="linkedin"
+                ><img src="img/icons/linkedin.svg" alt="Mi LinkedIn">
+                </svg>
+              </a>
+            </div>
+        </article>
+      </section>
+      <section class="container-sobremi" id="sobremi">
+        <article class="top-abtm-container">
+          <div class="abtm-tl-prs">
+            <h2>SOBRE MI</h2>
+            <p>Mi pasión por el desarrollo backend me lleva a explorar constantemente nuevos retos y oportunidades. Me encanta aprender de cada proyecto y de cada persona con la que trabajo. Soy proactivo, comunicativo y colaborativo. Mi meta es crear aplicaciones que sorprendan y satisfagan a los usuarios, aportando mi creatividad y profesionalidad.
+            </p>
+          </div>
+        </article>
+        <article class="abtm-knw-exp">
+          <div class="knw-container">
+              <h2>Mis conocimientos</h2>
+              <div class="knw-lng">
+                <img src="./img/knw-lng/html.svg" alt="HTML">
+                <img src="./img/knw-lng/css.svg" alt="CSS">
+                <img src="./img/knw-lng/js.svg" alt="JavaScript">
+                <img src="./img/knw-lng/ts.svg" alt="TypeScript">
+                <img src="./img/knw-lng/java.svg" alt="Java">
+                <img src="./img/knw-lng/my-sql.svg" alt="MySQL">
+                <img src="./img/knw-lng/python.svg" alt="Python">
+                <img src="./img/knw-lng/git.svg" alt="Git">  
+              </div>
+            <p>Soy un programador backend sin experiencia laboral, pero he desarrollado proyectos por cuenta propia. Mis habilidades se centran en lenguajes como Python y Java en el backend. Aunque mi experiencia en el frontend es básica, he trabajado en proyectos personales utilizando HTML, CSS, JavaScript y TypeScript para crear soluciones web completas.</p>
+          </div>
+        </article>
+        <article class="abtm-ill-pro">
+          <div class="pro-exp">
+            <p>Echa un vistazo a <a href="https://github.com/jmcodedev">mis proyectos</a></p>
+            <a href="https://github.com/jmcodedev"><img src="./img/icons/cool-github.svg" alt="Mi Github"></a>
+          </div>
+        </article>
+      </section>
+      <section class="container-proyectos" id="proyectos">
+        <div class="proyect-container">
+          <h2>MIS PROYECTOS</h2>
+          <div class="proyect">
+           <a href="https://github.com/jmcodedev/NoteDesk" target="_blank" id="screenshot-container">
+            <img src="./img/proyects/notedesk-screen.png" alt="Notedesk" class="proyect-screenshot">
+           </a>
+           <div class="proyect-details">
+            <h3>NoteDesk</h3>
+            <p>La aplicación desarrollada es una herramienta fácil de usar que permitirá gestionar de manera eficiente a los usuarios sus notas.
+              Haciendo enfoque a la simplicidad y la funcionalidad, esta aplicación permite crear, editar, buscar y eliminar notas. En primera instancia el usuario es recibido con un sencillo inicio de sesión. En caso de no estar registrado en la base de datos se puede registrar a través de la pantalla puesta a su disposición, en caso de no desearlo se podrá continuar como invitado.</p>
+            <div class="developed-with">
+              <div class="programming-lang">
+                <img src="./img/knw-lng/python.svg" alt="Pythpn">
+                <img src="./img/knw-lng/my-sql.svg" alt="MySQL">
+              </div>
+              <a href="https://github.com/jmcodedev/NoteDesk" target="_blank"><button class="visit-bttn">Visitar</button></a>
+            </div>
+           </div>
+
+          </div>
+          <div class="proyect">
+            <a href="https://click-fotografia.es" target="_blank" id="screenshot-container">
+              <img src="./img/proyects/click-site.png" alt="Click! Fotografía" class="proyect-screenshot">
+            </a>
+            <div class="proyect-details">
+              <h3>Web Click! Fotografía</h3>
+              <p>Web portafolio orientada a la venta de servicios de fotografía social. Desarrollada en WordPress y utilizando Elementor como constructor visual, la plataforma ofrece una experiencia visual atractiva y fácil de navegar. La integración de Elementor permite la personalización y la creación de páginas de manera eficiente. Este enfoque en WordPress garantiza una gestión flexible del contenido y la capacidad de escalar la plataforma para satisfacer las necesidades cambiantes del negocio de fotografía. Con Click Fotografía, se busca proporcionar un escaparate virtual impactante y accesible para atraer a clientes interesados en servicios fotográficos sociales.</p>
+              <div class="developed-with">
+                <div class="programming-lang">
+                  <img src="./img/knw-lng/wordpress.svg" alt="WordPress">
+                  <img src="./img/knw-lng/elementor.svg" alt="Elementor">
+                </div>
+                <a href="https://click-fotografia.es" target="_blank"><button class="visit-bttn">Visitar</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="proyect">
+            <a href="https://jmcode.dev" target="_blank" id="screenshot-container">
+              <img src="./img/proyects/jmcode.png" alt="jmcode.dev" class="proyect-screenshot">
+            </a>
+            <div class="proyect-details">
+              <h3>Web jmCode</h3>
+              <p>"jmcode", mi propia página web, ha sido creada con HTML, CSS y TypeScript. Diseñada como un portafolio, destaca proyectos personales en desarrollo. La combinación de estas tecnologías permite una presentación atractiva y funcional de mi trabajo. HTML estructura el contenido, CSS proporciona estilos visuales, y TypeScript añade dinamismo e interactividad. La página ofrece una visión completa de mis habilidades y proyectos, demostrando mi experiencia en desarrollo. Con jmcode, busco exhibir mi talento y logros de manera efectiva.</p>
+              <div class="developed-with">
+                <div class="programming-lang">
+                  <img src="./img/knw-lng/html.svg" alt="HTML">
+                  <img src="./img/knw-lng/css.svg" alt="CSS">
+                  <img src="./img/knw-lng/ts.svg" alt="TypeScript">
+                </div>
+                <a href="https://github.com/jmcodedev/Web-Portfolio" target="_blank"><button class="visit-bttn">Visitar</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-contacto" id="contacto">
+        <article class="contactos">
+          <div class="contact-izquierdo">
+            <h2>CONTACTO</h2>
+            <div class="medios">
+              <a  style="cursor: pointer;">
+                <img src="img/icons/mail.svg" alt="Mail icon">
+                <p id="emailLink">joan@jmcode.dev</p>
+              </a>
+              <a href="https://www.linkedin.com/in/jmcode/">
+                <img src="img/icons/cool-linkedin.svg" alt="LinkedIn icon">
+                /jmcode
+              </a>
+              <a href="documents/CV_JOAN MARTINEZ.pdf" download="CV_JOAN MARTINEZ.pdf">
+                <img src="img/icons/CV.svg" alt="CV Icon">
+                Descargar CV
+              </a>
+            </div>
+          </div>
+          <div class="contact-derecho">
+            <img src="img/person/foto-contacto@0,3x.png" alt="Joan">
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="./src/main.ts"></script>
+  </body>
+</html>
