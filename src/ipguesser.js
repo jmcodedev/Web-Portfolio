@@ -1,5 +1,5 @@
 const __URL__ =
-  "https://ip-geolocation-find-ip-location-and-ip-info.p.rapidapi.com/backend/ipinfo/?ip";
+  "https://ip-geolocation-find-ip-location-and-ip-info.p.rapidapi.com/backend/ipinfo/?ip"; 
 const __OPTIONS_ = {
   method: "GET",
   headers: {
