@@ -1,5 +1,6 @@
+// Declaración de constantes
 const __URL__ =
-  "https://ip-geolocation-find-ip-location-and-ip-info.p.rapidapi.com/backend/ipinfo/?ip"; 
+  "https://ip-geolocation-find-ip-location-and-ip-info.p.rapidapi.com/backend/ipinfo/?ip";
 const __OPTIONS_ = {
   method: "GET",
   headers: {
@@ -8,11 +9,6 @@ const __OPTIONS_ = {
       "ip-geolocation-find-ip-location-and-ip-info.p.rapidapi.com",
   },
 };
-const fetchInfo = (ip) => {
-  return fetch(`${__URL__}=${ip}`, __OPTIONS_)
-    .then((res) => res.json())
-    .catch((error) => console.log(error));
-};
 
 const $ = (selector) => document.getElementById(selector);
 
@@ -20,6 +16,13 @@ const $form = $("form");
 const $input = $("ip");
 const $submit = $("submit");
 const $results = $("results");
+
+// Fin declaración de constantes
+const fetchInfo = (ip) => {
+  return fetch(`${__URL__}=${ip}`, __OPTIONS_)
+    .then((res) => res.json())
+    .catch((error) => console.log(error));
+};
 
 try {
   $form.addEventListener("submit", async (event) => {
