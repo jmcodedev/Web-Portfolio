@@ -24,11 +24,19 @@ const fetchInfo = (ip) => {
     .catch((error) => console.log(error));
 };
 
+function checkFormat(ip) {
+  const regex = new RegExp(/^(\d{1,3}\.){3}\d{1,3}$/);
+  return regex.test(ip);
+}
+
 try {
   $form.addEventListener("submit", async (event) => {
     event.preventDefault();
     const { value } = $input;
-    if (!value) return;
+    if (!checkFormat(value)) {
+      $results.textContent = "Invalid IP format";
+      return;
+    }
 
     $submit.setAttribute("disabled", "");
     $submit.setAttribute("aria-busy", "true");
@@ -39,7 +47,7 @@ try {
         $results.innerHTML = JSON.stringify(result, null, 2);
       })
       .catch((error) => {
-        $results.innerHTML = error;
+        $results.textContent = error.message;
       });
 
     $submit.removeAttribute("disabled");
@@ -47,5 +55,5 @@ try {
     $submit.removeAttribute("aria-label");
   });
 } catch (error) {
-  $results.innerHTML = error;
+  $results.textContent = error.message;
 }
