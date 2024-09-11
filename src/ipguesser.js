@@ -47,7 +47,7 @@ try {
         $results.innerHTML = JSON.stringify(result, null, 2);
       })
       .catch((error) => {
-        $results.textContent = error.message;
+        console.error(error);
       });
 
     $submit.removeAttribute("disabled");
@@ -55,5 +55,5 @@ try {
     $submit.removeAttribute("aria-label");
   });
 } catch (error) {
-  $results.textContent = error.message;
+  console.error(error);
 }
